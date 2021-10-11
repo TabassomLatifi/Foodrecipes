@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 40px 24px;
+}
+
+.app__searchForm {
+  margin-top: 18px;
+}
+
+.app__input {
+  padding: 6px 16px;
+  min-width: 200px;
+  max-width: 100vw;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.app__submit {
+  padding: 6px 18px;
+  font-size: 16px;
+  margin-left: 6px;
+  background-color: rgb(255, 130, 46);
+  border: 2px solid rgb(255, 130, 46);
   color: white;
+  border-radius: 4px;
+  cursor: pointer;
+
 }
 
-.App-link {
-  color: #61dafb;
+.app__submit:hover {
+  padding: 6px 18px;
+  font-size: 16px;
+  margin-left: 6px;
+  background-color: white;
+  border: 2px solid rgb(255, 130, 46);
+  color: rgb(255, 130, 46);
+  border-radius: 4px;
+  cursor: pointer;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__header2 {
+  margin-top: 24px;
+  color:rgb(255, 130, 46)
+}
+
+.app__recipes {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  align-items: baseline;
+  justify-content: center;
 }

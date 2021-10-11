@@ -1,0 +1,54 @@
+.recipeTile {
+    cursor: pointer;
+}
+
+.recipeTile__img {
+    height: 290px;
+    width: 290px;
+    border-radius: 4px 4px 0px 0px;
+    box-shadow: 2px -3px 4px lightgray;
+    margin-bottom: 0px;
+}
+
+.recipeTile__caption {
+    width: 290px;
+    height: 80px;
+    background-color: white;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 2px 3px 4px lightgray;
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+
+.recipeTile__name {
+    max-width: 300px;
+    text-align: center;
+    padding: 25px 5px 25px 5px;    
+    font-weight: bold;
+}
+
+.recipeTile__button {
+    width: 120px;
+    height: 40px;
+    background-color: lightseagreen;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    margin: 5px 0px 15px 0px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.recipeTile__button:hover {
+    width: 120px;
+    height: 40px;
+    background-color: rgb(229, 248, 247);
+    border: 1px solid lightseagreen;
+    text-align: center;
+    border-radius: 4px;
+    margin: 5px 0px 15px 0px;
+    font-weight: bold;
+    color: lightseagreen;
+    cursor: pointer;
+}
