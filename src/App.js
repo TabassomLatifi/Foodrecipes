@@ -8,9 +8,8 @@ import { Helmet } from 'react-helmet';
 function App() {
   const [query, setQuery] = useState('');
   const [recipes, setRecipes] = useState([]);
-  const [healthLabels, sethealthLabels] = useState('vegan');
 
-  let url = `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${myAppId}&app_key=${myAppKey}&healthLabels=${healthLabels}`;
+  let url = `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${myAppId}&app_key=${myAppKey}`;
   
   const getRecipes = async () => {
     const result = await Axios.get(url);
