@@ -54,3 +54,35 @@
   align-items: baseline;
   justify-content: center;
 }
+
+@media only screen and (max-width: 900px) {
+  .app__recipes {
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .app__recipes {
+    grid-template-columns: 300px;
+  }
+  .app__searchForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app__input {
+    margin-bottom: 15px;
+  }
+
+  .app__submit {
+    margin-left: 0px;
+  }
+
+  .app__submit:hover {
+    margin-left: 0px;
+  }
+  .app__header {
+    font-size: 24px;
+    text-align: center;
+  }
+}

@@ -3,6 +3,7 @@ import { myAppId, myAppKey} from './key.js';
 import Axios from 'axios';
 import { useState } from 'react';
 import RecipeTile from "./RecipeTile.js";
+import { Helmet } from 'react-helmet';
 
 function App() {
   const [query, setQuery] = useState('');
@@ -24,7 +25,12 @@ function App() {
 
   return (
     <div className='app'>
-      <h1>Find Recipes For Your Ingredients</h1>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Food Recipes</title>
+        <meta name='description' content='a website for finding recipes based on the ingredient you have' />
+      </Helmet>
+      <h1 className='app__header'>Find Recipes For Your Ingredients</h1>
       <form className='app__searchForm' onSubmit={onSubmit}>
         <input 
           type='text' 

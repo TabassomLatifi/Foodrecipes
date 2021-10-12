@@ -26,29 +26,3 @@
     padding: 25px 5px 25px 5px;    
     font-weight: bold;
 }
-
-.recipeTile__button {
-    width: 120px;
-    height: 40px;
-    background-color: lightseagreen;
-    border: none;
-    text-align: center;
-    border-radius: 4px;
-    margin: 5px 0px 15px 0px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-}
-
-.recipeTile__button:hover {
-    width: 120px;
-    height: 40px;
-    background-color: rgb(229, 248, 247);
-    border: 1px solid lightseagreen;
-    text-align: center;
-    border-radius: 4px;
-    margin: 5px 0px 15px 0px;
-    font-weight: bold;
-    color: lightseagreen;
-    cursor: pointer;
-}
